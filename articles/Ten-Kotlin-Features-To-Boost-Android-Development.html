@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ten Kotlin Features To Boost Android Development </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel='stylesheet' href='./styles.css'>
+  <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <script src="undefined"></script>
+</head>
+<body>
+<div id="layout" class="layout">
+  <header class="article-nav">
+    <button class="menu-link">
+      <!-- Hamburger icon -->
+      <span></span>
+    </button>
+    <div class="article-nav-links">
+      <a href="Writing-Kotlin-Idiomatic-Code.html" class="article-nav-link article-nav-link--prev">previous</a>
+      <a href="Getting-started-with-Kotlin-in-Android-development.html" class="article-nav-link article-nav-link--next">next</a>
+    </div>
+  </header>
+
+  <aside id="menu" class="menu">
+    <div class="pure-menu">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-list-date">Sep 02, 2016</li><li><a href="./Building-DSL-Instead-of-an-IDE-Plugin.html">Building DSL Instead of an IDE Plugin</a></li>
+<li class="pure-menu-list-date">Sep 01, 2016</li><li><a href="./Kotlin-census-call-to-action.html">Kotlin census: call to action</a></li>
+<li class="pure-menu-list-date">Aug 31, 2016</li><li><a href="./Natural-testing-with-Kotlin.html">Natural testing with Kotlin</a></li>
+<li><a href="./Writing-Kotlin-Idiomatic-Code.html">Writing Kotlin Idiomatic Code</a></li>
+<li class="pure-menu-list-date">Aug 30, 2016</li><li><a href="./Ten-Kotlin-Features-To-Boost-Android-Development.html">Ten Kotlin Features To Boost Android Development </a></li>
+<li><a href="./Getting-started-with-Kotlin-in-Android-development.html">Getting started with Kotlin in Android development</a></li>
+<li><a href="./Kotlin-val-does-not-mean-immutable-it-just-means-readonly-yeah.html">Kotlin: val does not mean immutable, it just means readonly, yeah</a></li>
+<li class="pure-menu-list-date">Aug 27, 2016</li><li><a href="./Improved-Pattern-Matching-in-Kotlin.html">Improved Pattern Matching in Kotlin</a></li>
+<li class="pure-menu-list-date">Aug 21, 2016</li><li><a href="./Scala-vs-Kotlin-inline-and-infix.html">Scala vs Kotlin: inline and infix</a></li>
+<li class="pure-menu-list-date">Aug 20, 2016</li><li><a href="./Decision-Trees-with-Kotlin.html">Decision Trees with Kotlin</a></li>
+<li><a href="./Kotlin-The-Good-The-Bad-and-The-Ugly.html">Kotlin: The Good, The Bad, and The Ugly</a></li>
+<li class="pure-menu-list-date">Aug 17, 2016</li><li><a href="./The-Next-Language-You-Thought-You-Didn’t-Need.html">The Next Language You Thought You Didn’t Need</a></li>
+<li class="pure-menu-list-date">Aug 14, 2016</li><li><a href="./Logging-in-Kotlin-Android-AnkoLogger-vs-kotlin-logging.html">Logging in Kotlin & Android: AnkoLogger vs kotlin-logging</a></li>
+<li class="pure-menu-list-date">Aug 10, 2016</li><li><a href="./PaperParcel-with-Kotlin.html">PaperParcel with Kotlin</a></li>
+<li><a href="./Issues-Faced-With-Kotlin-During-Android-Development.html">Issues Faced With Kotlin During Android Development</a></li>
+<li><a href="./Lessons-from-converting-an-app-to-100-Kotlin.html">Lessons from converting an app to 100% Kotlin</a></li>
+<li class="pure-menu-list-date">Aug 06, 2016</li><li><a href="./The-Kobalt-diaries-Parallel-builds.html">The Kobalt diaries: Parallel builds</a></li>
+<li class="pure-menu-list-date">Aug 05, 2016</li><li><a href="./Writing-Gradle-Build-Scripts-in-Kotlin.html">Writing Gradle Build Scripts in Kotlin</a></li>
+<li><a href="./More-readable-tests-with-Kotlin.html">More readable tests with Kotlin</a></li>
+<li class="pure-menu-list-date">Aug 04, 2016</li><li><a href="./Calling-on-EAPers.html">Calling on EAPers</a></li>
+<li class="pure-menu-list-date">Aug 03, 2016</li><li><a href="./Better-Android-Development-with-Kotlin-and-Gradle.html">Better Android Development with Kotlin and Gradle</a></li>
+<li><a href="./Andrey-Breslav-Kotlin-Coroutines-JVMLS-2016.html">Andrey Breslav: Kotlin Coroutines, JVMLS 2016</a></li>
+<li class="pure-menu-list-date">Jul 28, 2016</li><li><a href="./KotlinLifeguard-1.html">KotlinLifeguard #1</a></li>
+<li class="pure-menu-list-date">Jul 27, 2016</li><li><a href="./UI-Testing-separating-Assertions-from-Actions-with-Kotlin-DSL.html">UI Testing: separating Assertions from Actions with Kotlin DSL</a></li>
+<li class="pure-menu-list-date">Jul 26, 2016</li><li><a href="./JUnit-5-with-Spring-Boot-plus-Kotlin.html">JUnit 5 with Spring Boot (plus Kotlin)</a></li>
+<li class="pure-menu-list-date">Jul 25, 2016</li><li><a href="./Things-We-ve-Learned-During-Coolcal-Development-in-Kotlin.html">Things We've Learned During Coolcal Development in Kotlin</a></li>
+<li class="pure-menu-list-date">Jul 24, 2016</li><li><a href="./Scala-vs-Kotlin-Operator-overloading.html">Scala vs Kotlin: Operator overloading</a></li>
+<li class="pure-menu-list-date">Jul 14, 2016</li><li><a href="./First-glimpse-of-Kotlin-1-1-Coroutines-Type-aliases-and-more.html">First glimpse of Kotlin 1.1: Coroutines, Type aliases and more</a></li>
+<li class="pure-menu-list-date">Jul 10, 2016</li><li><a href="./Scala-vs-Kotlin-Pimp-my-library.html">Scala vs Kotlin: Pimp my library</a></li>
+<li class="pure-menu-list-date">Jul 06, 2016</li><li><a href="./Never-say-final-mocking-Kotlin-classes-in-unit-tests.html">Never say final: mocking Kotlin classes in unit tests</a></li>
+<li class="pure-menu-list-date">Jul 03, 2016</li><li><a href="./Data-Driven-Testing-with-Spek.html">Data Driven Testing with Spek </a></li>
+<li class="pure-menu-list-date">Jun 30, 2016</li><li><a href="./Kotlin-1-0-3-Is-Here.html">Kotlin 1.0.3 Is Here!</a></li>
+<li class="pure-menu-list-date">Jun 25, 2016</li><li><a href="./How-to-get-IDEA-to-detect-kotlin-generated-sources-using-Gradle.html">How to get IDEA to detect kotlin generated sources using Gradle</a></li>
+<li class="pure-menu-list-date">Jun 20, 2016</li><li><a href="./Ad-hoc-polymorphism-in-Kotlin.html">Ad-hoc polymorphism in Kotlin</a></li>
+<li><a href="./Kotlin-null-safety-and-its-performance-considerations-part-1.html">Kotlin null safety and its performance considerations -- part 1</a></li>
+<li class="pure-menu-list-date">Jun 17, 2016</li><li><a href="./Kotlin-Native.html">Kotlin Native</a></li>
+<li class="pure-menu-list-date">Jun 14, 2016</li><li><a href="./Kotlin-Night-in-San-Francisco-Recordings.html">Kotlin Night in San Francisco Recordings</a></li>
+<li><a href="./News-from-KotlinTest.html">News from KotlinTest</a></li>
+<li class="pure-menu-list-date">Jun 13, 2016</li><li><a href="./Meet-the-Kotlin-Team-at-Gradle-Summit.html">Meet the Kotlin Team at Gradle Summit</a></li>
+<li class="pure-menu-list-date">Jun 09, 2016</li><li><a href="./Архитектор-Kotlin-Язык-программирования-—-рабочий-инструмент-Если-никогда-их-не-менять-можно-отстать-от-жизни-.html">Архитектор Kotlin: «Язык программирования — рабочий инструмент. Если никогда их не менять, можно отстать от жизни» </a></li>
+<li class="pure-menu-list-date">Jun 08, 2016</li><li><a href="./Kotlin-1-0-3-EAP.html">Kotlin 1.0.3 EAP</a></li>
+<li class="pure-menu-list-date">Jun 06, 2016</li><li><a href="./When-Kotlin-met-Gradle.html">When Kotlin met Gradle</a></li>
+<li class="pure-menu-list-date">Jun 03, 2016</li><li><a href="./Kotlin-Eclipse-Plugin-0-7-Is-Here.html">Kotlin Eclipse Plugin 0.7 Is Here!</a></li>
+<li class="pure-menu-list-date">Jun 02, 2016</li><li><a href="./What’s-in-store-for-Kotlin-this-year.html">What’s in store for Kotlin this year</a></li>
+<li class="pure-menu-list-date">Jun 01, 2016</li><li><a href="./Where-We-Stand-What-s-Next-for-Kotlin.html">Where We Stand & What's Next for Kotlin</a></li>
+<li class="pure-menu-list-date">May 30, 2016</li><li><a href="./Neural-Networks-in-Kotlin-part-2.html">Neural Networks in Kotlin (part 2)</a></li>
+<li class="pure-menu-list-date">May 27, 2016</li><li><a href="./Neural-Network-in-Kotlin.html">Neural Network in Kotlin</a></li>
+<li class="pure-menu-list-date">May 24, 2016</li><li><a href="./You-can-do-Better-with-Kotlin.html">You can do Better with Kotlin</a></li>
+<li class="pure-menu-list-date">May 20, 2016</li><li><a href="./Kotlin-dragging-java-into-the-modern-world.html">Kotlin, dragging java into the modern world</a></li>
+<li class="pure-menu-list-date">May 18, 2016</li><li><a href="./Gradle-Meets-Kotlin.html">Gradle Meets Kotlin</a></li>
+<li><a href="./Kotlin-Meets-Gradle.html">Kotlin Meets Gradle</a></li>
+<li class="pure-menu-list-date">May 17, 2016</li><li><a href="./Gradle-Elevates-the-Build-to-First-Class-Programming-With-Kotlin-Language.html">Gradle Elevates the Build to First-Class Programming With Kotlin Language</a></li>
+<li class="pure-menu-list-date">May 13, 2016</li><li><a href="./Kotlin-1-0-2-is-Here.html">Kotlin 1.0.2 is Here</a></li>
+<li class="pure-menu-list-date">May 12, 2016</li><li><a href="./Kosent.html">Kosent</a></li>
+<li class="pure-menu-list-date">May 10, 2016</li><li><a href="./Testing-in-Kotlin.html">Testing in Kotlin</a></li>
+<li class="pure-menu-list-date">May 01, 2016</li><li><a href="./JMock-and-Kotlin.html">JMock and Kotlin</a></li>
+<li class="pure-menu-list-date">Apr 29, 2016</li><li><a href="./Exercises-in-Kotlin-Part-5-Classes.html">Exercises in Kotlin: Part 5 - Classes</a></li>
+<li class="pure-menu-list-date">Apr 27, 2016</li><li><a href="./Exercises-in-Kotlin-Part-4-Control-flows-and-return.html">Exercises in Kotlin: Part 4 - Control flows and return</a></li>
+<li class="pure-menu-list-date">Apr 24, 2016</li><li><a href="./Writing-Concise-Code-With-Kotlin.html">Writing Concise Code With Kotlin</a></li>
+<li><a href="./Type-safe-JavaFX-CSS-with-TornadoFX.html">Type safe JavaFX CSS with TornadoFX</a></li>
+<li class="pure-menu-list-date">Apr 21, 2016</li><li><a href="./JDK7-8-features-in-Kotlin-1-0.html">JDK7/8 features in Kotlin 1.0</a></li>
+<li><a href="./Kotlin-Android.html">Kotlin + Android</a></li>
+<li class="pure-menu-list-date">Apr 20, 2016</li><li><a href="./Kotlin-Android-First-Impressions.html">Kotlin + Android First Impressions</a></li>
+<li><a href="./Exercises-in-Kotlin-Part-3-Functions.html">Exercises in Kotlin: Part 3 - Functions</a></li>
+<li class="pure-menu-list-date">Apr 19, 2016</li><li><a href="./Exercises-in-Kotlin-Part-2-High-level-syntax-and-Variables.html">Exercises in Kotlin: Part 2 - High level syntax and Variables</a></li>
+<li class="pure-menu-list-date">Apr 18, 2016</li><li><a href="./Exercises-in-Kotlin-Part-1-Getting-Started.html">Exercises in Kotlin: Part 1 - Getting Started</a></li>
+<li class="pure-menu-list-date">Apr 17, 2016</li><li><a href="./Code-improvements-with-Kotlin.html">Code improvements with Kotlin</a></li>
+<li class="pure-menu-list-date">Apr 15, 2016</li><li><a href="./Few-thoughts-about-Kotlin-and-why-I-like-it-so-much.html">Few thoughts about Kotlin and why I like it so much</a></li>
+<li class="pure-menu-list-date">Apr 14, 2016</li><li><a href="./Kotlin-for-Scala-Developers.html">Kotlin for Scala Developers</a></li>
+<li><a href="./Kotlin-Post-1-0-Roadmap.html">Kotlin Post-1.0 Roadmap</a></li>
+<li class="pure-menu-list-date">Apr 11, 2016</li><li><a href="./Making-Android-Development-Easier.html">Making Android Development Easier</a></li>
+<li class="pure-menu-list-date">Apr 09, 2016</li><li><a href="./Keddit — Part-7-Infinite-Scroll-Higher-Order-functions-Lambdas.html">Keddit — Part 7: Infinite Scroll: Higher-Order functions & Lambdas</a></li>
+<li><a href="./The-Kobalt-diaries-Automatic-Android-SDK-management.html">The Kobalt diaries: Automatic Android SDK management</a></li>
+<li class="pure-menu-list-date">Apr 07, 2016</li><li><a href="./Android-And-Kotlin.html">Android And Kotlin</a></li>
+<li class="pure-menu-list-date">Apr 06, 2016</li><li><a href="./Kotlin-Digest-2016-Q1.html">Kotlin Digest 2016.Q1</a></li>
+<li><a href="./Kotlin-DSL-Anko.html">Kotlin DSL: Anko</a></li>
+<li class="pure-menu-list-date">Apr 04, 2016</li><li><a href="./Kotlin-Practical-Experience.html">Kotlin: Practical Experience</a></li>
+<li><a href="./Kotlin’s-killer-features.html">Kotlin’s killer features</a></li>
+<li><a href="./Exploring-Delegation-in-Kotlin.html">Exploring Delegation in Kotlin</a></li>
+<li class="pure-menu-list-date">Apr 03, 2016</li><li><a href="./Experimental-Kotlin-and-mutation-testing.html">Experimental: Kotlin and mutation testing</a></li>
+<li class="pure-menu-list-date">Mar 31, 2016</li><li><a href="./10-Features-I-Wish-Java-Would-Steal-From-the-Kotlin-Language.html">10 Features I Wish Java Would Steal From the Kotlin Language</a></li>
+<li class="pure-menu-list-date">Mar 30, 2016</li><li><a href="./Ubuntu-Make-16-03-Released-With-Eclipse-JEE-And-IntelliJ-IDEA-EAP-Support-More.html">Ubuntu Make 16.03 Released With Eclipse JEE And IntelliJ IDEA EAP Support, More</a></li>
+<li><a href="./Kotlin’s-Android-Roadmap.html">Kotlin’s Android Roadmap</a></li>
+<li class="pure-menu-list-date">Mar 29, 2016</li><li><a href="./Rest-API-plumbing-with-kotlin.html">Rest API plumbing with kotlin</a></li>
+<li class="pure-menu-list-date">Mar 28, 2016</li><li><a href="./Creating-an-AndroidWear-watchface-using-Kotlin.html">Creating an AndroidWear watchface using Kotlin</a></li>
+<li class="pure-menu-list-date">Mar 22, 2016</li><li><a href="./Writing-a-RESTful-backend-using-Kotlin-and-Spring-Boot.html">Writing a RESTful backend using Kotlin and Spring Boot</a></li>
+<li><a href="./How-to-Hot-Deploy-Java-Kotlin-classes-in-Dev.html">How to Hot Deploy Java/Kotlin classes in Dev</a></li>
+<li><a href="./RU-Андрей-Бреслав-и-Дмитрий-Жемеров-о-Kotlin-1-0-на-jug-msk-ru.html">(RU) Андрей Бреслав и Дмитрий Жемеров о Kotlin 1.0 на jug.msk.ru</a></li>
+<li class="pure-menu-list-date">Mar 20, 2016</li><li><a href="./A-Geospatial-Messenger-with-Kotlin-Spring-Boot-and-PostgreSQL.html">A Geospatial Messenger with Kotlin, Spring Boot and PostgreSQL</a></li>
+<li class="pure-menu-list-date">Mar 19, 2016</li><li><a href="./Algebraic-Data-Types-In-Kotlin.html">Algebraic Data Types In Kotlin</a></li>
+<li><a href="./Kotlin-Month-Post-4-Properties.html">Kotlin Month Post 4: Properties</a></li>
+<li class="pure-menu-list-date">Mar 17, 2016</li><li><a href="./Kotlin-Educational-Plugin.html">Kotlin Educational Plugin</a></li>
+<li class="pure-menu-list-date">Mar 16, 2016</li><li><a href="./Using-Kotlin-For-Tests-in-Android.html">Using Kotlin For Tests in Android</a></li>
+<li><a href="./Kotlin-1-0-1-is-Here.html">Kotlin 1.0.1 is Here!</a></li>
+<li><a href="./Kotlin-recipes-for-Android-I-OnGlobalLayoutListener.html">Kotlin recipes for Android (I): OnGlobalLayoutListener</a></li>
+<li class="pure-menu-list-date">Mar 15, 2016</li><li><a href="./Kotlin-Retrofit-RxAndroid-Realm.html">Kotlin : Retrofit + RxAndroid + Realm</a></li>
+<li class="pure-menu-list-date">Mar 14, 2016</li><li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Wrap-Up.html">Kotlin & Android: A Brass Tacks Experiment Wrap-Up</a></li>
+<li class="pure-menu-list-date">Mar 13, 2016</li><li><a href="./Kotlin-Month-Post-3-Safety.html">Kotlin Month Post 3: Safety</a></li>
+<li><a href="./Feedback-on-the-Josephus-problem.html">Feedback on the Josephus problem</a></li>
+<li class="pure-menu-list-date">Mar 11, 2016</li><li><a href="./RU-SDCast-41-в-гостях-Андрей-Бреслав-руководитель-проекта-Kotlin-в-компании-JetBrains.html">(RU) SDCast #41: в гостях Андрей Бреслав, руководитель проекта Kotlin в компании JetBrains</a></li>
+<li><a href="./Why-I-don-t-want-to-use-Kotlin-for-Android-Development-yet.html">Why I don't want to use Kotlin for Android Development yet</a></li>
+<li class="pure-menu-list-date">Mar 09, 2016</li><li><a href="./Getting-Started-with-Kotlin-and-Anko-on-Android.html">Getting Started with Kotlin and Anko on Android</a></li>
+<li><a href="./RU-Дмитрий-Полищук-Kotlin-Android-практический-ликбез.html">(RU) Дмитрий Полищук - Kotlin + Android: практический ликбез</a></li>
+<li class="pure-menu-list-date">Mar 08, 2016</li><li><a href="./A-DSL-Workbench-with-Gradle-and-Kotlin.html">A DSL Workbench with Gradle and Kotlin</a></li>
+<li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Part-6.html">Kotlin & Android: A Brass Tacks Experiment, Part 6</a></li>
+<li class="pure-menu-list-date">Mar 06, 2016</li><li><a href="./Solving-the-Josephus-problem-in-Kotlin.html">Solving the Josephus problem in Kotlin</a></li>
+<li class="pure-menu-list-date">Mar 05, 2016</li><li><a href="./Kotlin-Month-Post-2-Inheritance-and-Defaults.html">Kotlin Month Post 2: Inheritance and Defaults</a></li>
+<li class="pure-menu-list-date">Mar 04, 2016</li><li><a href="./Building-a-Kotlin-project-2-2.html">Building a Kotlin project 2/2</a></li>
+<li><a href="./Building-a-Kotlin-project-1-2.html">Building a Kotlin project 1/2</a></li>
+<li><a href="./RU-Видео-со-встречи-JUG-ru-с-разработчиками-Kotlin.html">(RU) Видео со встречи JUG.ru с разработчиками Kotlin</a></li>
+<li class="pure-menu-list-date">Mar 03, 2016</li><li><a href="./Kotlin-a-new-JVM-language-you-should-try.html">Kotlin: a new JVM language you should try</a></li>
+<li class="pure-menu-list-date">Mar 02, 2016</li><li><a href="./RU-Kotlin-для-начинающих.html">(RU) Kotlin для начинающих</a></li>
+<li class="pure-menu-list-date">Mar 01, 2016</li><li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Part-5.html">Kotlin & Android: A Brass Tacks Experiment, Part 5</a></li>
+<li><a href="./Developing-on-Android-sucks-a-lot-less-with-Kotlin.html">Developing on Android sucks a lot less with Kotlin</a></li>
+<li class="pure-menu-list-date">Feb 29, 2016</li><li><a href="./The-Journey-of-a-Spring-Boot-application-from-Java-8-to-Kotlin-part-3-Data-Classes.html">The Journey of a Spring Boot application from Java 8 to Kotlin, part 3: Data Classes</a></li>
+<li><a href="./Как-себе-выстрелить-в-ногу-в-Kotlin.html">Как себе выстрелить в ногу в Kotlin</a></li>
+<li class="pure-menu-list-date">Feb 28, 2016</li><li><a href="./Kotlin-and-Ceylon.html">Kotlin and Ceylon</a></li>
+<li class="pure-menu-list-date">Feb 27, 2016</li><li><a href="./Kotlin-Month-Post-1-Assorted-Features.html">Kotlin Month Post 1: Assorted Features</a></li>
+<li class="pure-menu-list-date">Feb 24, 2016</li><li><a href="./Kotlin-2-Years-On.html">Kotlin - 2 Years On</a></li>
+<li class="pure-menu-list-date">Feb 23, 2016</li><li><a href="./The-Journey-of-a-Spring-Boot-application-from-Java-8-to-Kotlin-part-2-Configuration-Classes.html">The Journey of a Spring Boot application from Java 8 to Kotlin, part 2: Configuration Classes</a></li>
+<li><a href="./An-Introduction-to-Kotlin.html">An Introduction to Kotlin</a></li>
+<li><a href="./Kotlin-1-0-is-finally-released.html">Kotlin 1.0 is finally released!</a></li>
+<li class="pure-menu-list-date">Feb 22, 2016</li><li><a href="./More-Kotlin-Features-to-Love.html">More Kotlin Features to Love</a></li>
+<li><a href="./A-Very-Peculiar-but-Possibly-Cunning-Kotlin-Language-Feature.html">A Very Peculiar, but Possibly Cunning Kotlin Language Feature.</a></li>
+<li><a href="./Kotlin-Easily-storing-a-list-in-SharedPreferences-with-Custom-Accessors.html">Kotlin: Easily storing a list in SharedPreferences with Custom Accessors</a></li>
+<li class="pure-menu-list-date">Feb 21, 2016</li><li><a href="./Kotlin — Love-at-first-line.html">Kotlin — Love at first line</a></li>
+<li class="pure-menu-list-date">Feb 20, 2016</li><li><a href="./RU-Радио-Т-484.html">(RU) Радио-Т 484</a></li>
+<li><a href="./RU-DevZen-Podcast-Kotlin-и-Vulkan-1-0-—-Episode-0080.html">(RU) DevZen Podcast: Kotlin и Vulkan 1.0 — Episode 0080.</a></li>
+<li><a href="./The-Kobalt-diaries-testing.html">The Kobalt diaries: testing</a></li>
+<li><a href="./RU-Немного-о-Kotlin.html">(RU) Немного о Kotlin.</a></li>
+<li><a href="./Using-Mockito-for-unit-testing-with-Kotlin-1-x.html">Using Mockito for unit testing with Kotlin (1/x)</a></li>
+<li><a href="./Weekend-resources-for-new-Kotlin-programmers.html">Weekend resources for new Kotlin programmers</a></li>
+<li class="pure-menu-list-date">Feb 19, 2016</li><li><a href="./RU-Kotlin-1-0-Задай-вопрос-команде.html">(RU) Kotlin 1.0. Задай вопрос команде.</a></li>
+<li class="pure-menu-list-date">Feb 16, 2016</li><li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Part-3.html">Kotlin & Android: A Brass Tacks Experiment, Part 3.</a></li>
+<li><a href="./Kotlin-1-0-The-good-the-bad-and-the-evident.html">Kotlin 1.0: The good, the bad and the evident.</a></li>
+<li><a href="./RU-Релиз-Kotlin-1-0-языка-программирования-для-JVM-и-Android.html">(RU) Релиз Kotlin 1.0, языка программирования для JVM и Android.</a></li>
+<li class="pure-menu-list-date">Feb 15, 2016</li><li><a href="./JVM-Newcomer-Kotlin-1-0-is-GA.html">JVM Newcomer Kotlin 1.0 is GA</a></li>
+<li><a href="./Developing-Spring-Boot-applications-with-Kotlin.html">Developing Spring Boot applications with Kotlin.</a></li>
+<li><a href="./Kotlin-1-0-Released-Pragmatic-Language-for-JVM-and-Android.html">Kotlin 1.0 Released: Pragmatic Language for JVM and Android</a></li>
+<li class="pure-menu-list-date">Feb 13, 2016</li><li><a href="./The-Journey-of-a-Spring-Boot-application-from-Java-8-to-Kotlin-The-Application-Class.html">The Journey of a Spring Boot application from Java 8 to Kotlin: The Application Class</a></li>
+<li class="pure-menu-list-date">Feb 04, 2016</li><li><a href="./RU-Podcast-Разбор-Полетов-Episode-102-—-Kotlin-тесты-и-здоровый-сон.html">(RU) Podcast Разбор Полетов: Episode 102 — Kotlin, тесты и здоровый сон.</a></li>
+<li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Part-4.html">Kotlin & Android: A Brass Tacks Experiment, Part 4</a></li>
+<li><a href="./Kotlin-1-0-Release-Candidate-is-Out.html">Kotlin 1.0 Release Candidate is Out!</a></li>
+<li class="pure-menu-list-date">Feb 03, 2016</li><li><a href="./Kotlin-Coding.html">Kotlin Coding</a></li>
+<li class="pure-menu-list-date">Feb 02, 2016</li><li><a href="./10-Kotlin-Tutorials-for-Beginners-Dive-Into-Kotlin-Programming.html">10 Kotlin Tutorials for Beginners: Dive Into Kotlin Programming</a></li>
+<li class="pure-menu-list-date">Feb 01, 2016</li><li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Part-2.html">Kotlin & Android: A Brass Tacks Experiment, Part 2.</a></li>
+<li><a href="./Kotlin-Android-A-Brass-Tacks-Experiment-Part-1.html">Kotlin & Android: A Brass Tacks Experiment, Part 1.</a></li>
+<li><a href="./Scala-vs-Kotlin.html">Scala vs Kotlin</a></li>
+<li class="pure-menu-list-date">Jan 25, 2016</li><li><a href="./KillerTask-the-solution-to-AsyncTask-implementation.html">KillerTask, the solution to AsyncTask implementation</a></li>
+<li class="pure-menu-list-date">Jan 23, 2016</li><li><a href="./My-Kotlin-Adventure.html">My Kotlin Adventure</a></li>
+<li class="pure-menu-list-date">Jan 16, 2016</li><li><a href="./Mimicking-Kotlin-Builders-in-Java-and-Python.html">Mimicking Kotlin Builders in Java and Python</a></li>
+<li class="pure-menu-list-date">Jan 15, 2016</li><li><a href="./Android-development-with-Kotlin.html">Android development with Kotlin</a></li>
+<li><a href="./Kotlin-the-somewhat-obscure-modern-Android-friendly-programming-language.html">Kotlin, the somewhat obscure modern Android-friendly programming language</a></li>
+<li class="pure-menu-list-date">Jan 14, 2016</li><li><a href="./Fun-with-Kotlin.html">Fun with Kotlin</a></li>
+<li class="pure-menu-list-date">Jan 10, 2016</li><li><a href="./Playing-with-Spring-Boot-Vaadin-and-Kotlin.html">Playing with Spring Boot, Vaadin and Kotlin</a></li>
+<li class="pure-menu-list-date">Jan 06, 2016</li><li><a href="./Kotlin-XML-Binding.html">Kotlin XML Binding</a></li>
+<li class="pure-menu-list-date">Dec 30, 2015</li><li><a href="./Early-Impressions-of-Kotlin.html">Early Impressions of Kotlin</a></li>
+<li class="pure-menu-list-date">Dec 12, 2015</li><li><a href="./Kotlin-for-Java-Developers-10-Features-You-Will-Love-About-Kotlin.html">Kotlin for Java Developers: 10 Features You Will Love About Kotlin</a></li>
+<li class="pure-menu-list-date">Nov 11, 2015</li><li><a href="./Setting-up-Kotlin-with-Android-and-tests.html">Setting up Kotlin with Android and tests</a></li>
+<li class="pure-menu-list-date">Nov 05, 2015</li><li><a href="./Functional-Programming-with-Kotlin.html">Functional Programming with Kotlin</a></li>
+<li class="pure-menu-list-date">Oct 30, 2015</li><li><a href="./Exploring-the-Kotlin-standard-library.html">Exploring the Kotlin standard library</a></li>
+<li class="pure-menu-list-date">Oct 22, 2015</li><li><a href="./Kotlin-NoSQL-for-MongoDB-in-Action.html">Kotlin NoSQL for MongoDB in Action</a></li>
+<li class="pure-menu-list-date">Sep 21, 2015</li><li><a href="./Quasar-Efficient-and-Elegant-Fibers-Channels-and-Actors.html">Quasar: Efficient and Elegant Fibers, Channels and Actors</a></li>
+<li class="pure-menu-list-date">Sep 18, 2015</li><li><a href="./Kotlin-❤-FP.html">Kotlin ❤ FP</a></li>
+<li class="pure-menu-list-date">Aug 26, 2015</li><li><a href="./Production-Ready-Kotlin.html">Production Ready Kotlin</a></li>
+<li class="pure-menu-list-date">Aug 12, 2015</li><li><a href="./JVMLS-2015-Flexible-Types-in-Kotlin.html">JVMLS 2015 - Flexible Types in Kotlin</a></li>
+<li class="pure-menu-list-date">Aug 06, 2015</li><li><a href="./Building-APIs-on-the-JVM-Using-Kotlin-and-Spark-–-Part-1.html">Building APIs on the JVM Using Kotlin and Spark – Part 1</a></li>
+<li class="pure-menu-list-date">Jul 31, 2015</li><li><a href="./RU-Без-слайдов-интервью-с-Дмитрием-Жемеровым-из-JetBrains.html">(RU) Без слайдов: интервью с Дмитрием Жемеровым из JetBrains</a></li>
+<li class="pure-menu-list-date">Jul 20, 2015</li><li><a href="./Android-Kotlin-3.html">Android + Kotlin = <3</a></li>
+<li class="pure-menu-list-date">Jul 06, 2015</li><li><a href="./Why-Kotlin-is-my-next-programming-language.html">Why Kotlin is my next programming language</a></li>
+<li class="pure-menu-list-date">Jun 27, 2015</li><li><a href="./Exploring-Kotlin.html">Exploring Kotlin</a></li>
+<li><a href="./RxAndroid-and-Kotlin-Part-1.html">RxAndroid and Kotlin (Part 1)</a></li>
+<li class="pure-menu-list-date">Jun 04, 2015</li><li><a href="./Quasar-and-Kotlin-a-Powerful-Match.html">Quasar and Kotlin - a Powerful Match</a></li>
+<li class="pure-menu-list-date">May 09, 2015</li><li><a href="./Kotlin-New-Hope-in-a-Java-6-Wasteland.html">Kotlin: New Hope in a Java 6 Wasteland</a></li>
+<li class="pure-menu-list-date">Dec 11, 2014</li><li><a href="./Kotlin-for-Java-developers.html">Kotlin for Java developers</a></li>
+<li class="pure-menu-list-date">Dec 01, 2014</li><li><a href="./Non-trivial-constructors-in-Kotlin.html">Non-trivial constructors in Kotlin</a></li>
+<li class="pure-menu-list-date">Nov 03, 2014</li><li><a href="./GeeCON-Prague-2014-Andrey-Cheptsov-A-Reactive-and-Type-safe-Kotlin-DSL-for-NoSQL-and-SQL.html">GeeCON Prague 2014: Andrey Cheptsov - A Reactive and Type-safe Kotlin DSL for NoSQL and SQL</a></li>
+<li class="pure-menu-list-date">Sep 10, 2014</li><li><a href="./Kotlin-vs-Java-puzzlers.html">Kotlin vs Java puzzlers</a></li>
+<li class="pure-menu-list-date">Apr 02, 2013</li><li><a href="./The-Advent-of-Kotlin-A-Conversation-with-JetBrains-Andrey-Breslav.html">The Advent of Kotlin: A Conversation with JetBrains' Andrey Breslav</a></li>
+<li class="pure-menu-list-date">Feb 07, 2013</li><li><a href="./Exploring-the-Kotlin-Standard-Library-Part-3.html">Exploring the Kotlin Standard Library - Part 3</a></li>
+<li class="pure-menu-list-date">Jan 25, 2013</li><li><a href="./Exploring-the-Kotlin-Standard-Library-Part-2.html">Exploring the Kotlin Standard Library - Part 2</a></li>
+<li class="pure-menu-list-date">Jan 23, 2013</li><li><a href="./The-Adventurous-Developer’s-Guide-to-JVM-languages-–-Kotlin.html">The Adventurous Developer’s Guide to JVM languages – Kotlin</a></li>
+<li class="pure-menu-list-date">Jan 22, 2013</li><li><a href="./Exploring-the-Kotlin-Standard-Library-Part-1.html">Exploring the Kotlin Standard Library - Part 1</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <section id="main" class="main">
+    <div class="main-content">
+      <h1>
+        <a href="https://www.toptal.com/android/kotlin-boost-android-development">Ten Kotlin Features To Boost Android Development </a> - <span class="main-title-date">Aug 30, 2016</span>
+      </h1>
+      <h2>by Ivan Kušt</h2>
+      <h2>Introduction</h2>
+<p>A while ago, <a href="https://www.toptal.com/software/kotlin-android-language">Tomasz introduced Kotlin development on Android</a>. To remind you: Kotlin is a new programming language developed by <a href="https://www.jetbrains.com/">Jetbrains</a>, the company behind one of the most popular Java IDEs, <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>. Like Java, Kotlin is a general-purpose language. Since it complies to the Java Virtual Machine (JVM) bytecode, it can be used side-by-side with Java, and it doesn’t come with a performance overhead.</p>
+<p>In this article, I will cover the top ten useful features to boost your Android development.</p>
+<p><em>Note</em>: at the time of writing this article, actual versions were Android Studio 2.1.1. and Kotlin 1.0.2.</p>
+<p><img src="https://assets.toptal.io/uploads/blog/image/121111/toptal-blog-image-1472553848441-616cb981fb163d64c2d9d18a7e109d73.jpg" alt="Kotlin"></p>
+<p><em>Tired of never ending Java code? Try Kotlin, and save your time and sanity.</em></p>
+<h2>Kotlin Setup</h2>
+<p>Since Kotlin is developed by JetBrains, it is well-supported in both Android Studio and IntelliJ.</p>
+<p>The first step is to <a href="https://plugins.jetbrains.com/plugin/6954?pr=androidstudio">install Kotlin plugin</a>. After successfully doing so, new actions will be available for converting your Java to Kotlin. Two new options are:</p>
+<ol>
+<li>Create a new Android project and setup Kotlin in the project.</li>
+<li>Add Kotlin support to an existing Android project.</li>
+</ol>
+<p>To learn how to create a new Android project, check the <a href="https://kotlinlang.org/docs/tutorials/kotlin-android.html">official step by step guide</a>. To add Kotlin support to a newly created or an existing project, open the <a href="https://www.jetbrains.com/help/idea/2016.1/navigating-to-action.html?origin=old_help"><em>find action dialog</em></a> using <code>Command + Shift + A</code> on Mac or <code>Ctrl + Shift + A</code> on Windows/Linux, and invoke the <code>Configure Kotlin in Project</code> action.</p>
+<p>To create a new Kotlin class, select:</p>
+<ul>
+<li><code>File</code> > <code>New</code> > <code>Kotlin file/class</code>, or</li>
+<li><code>File</code> > <code>New</code> > <code>Kotlin activity</code></li>
+</ul>
+<p>Alternatively, you can create a Java class and convert it to Kotlin using the action mentioned above. Remember, you can use it to convert any class, interface, enum or annotation, and this can be used to compare Java easily to Kotlin code.</p>
+<p>Another useful element that saves a lot of typing are Kotlin extensions. To use them you have to apply another plugin in your module <code>build.gradle</code> file:</p>
+<pre><code class="hljs language-gradle">apply plugin: <span class="hljs-string">'kotlin-android-extensions'</span></code></pre>
+<p><strong>Caveat</strong>: if you are using the Kotlin plugin action to set up your project, it will put the following code in your top level <code>build.gradle</code> file:</p>
+<pre><code class="hljs language-gradle"><span class="hljs-keyword">buildscript</span> {
+   ext.kotlin_version = <span class="hljs-string">'1.0.2'</span>
+   <span class="hljs-keyword">repositories</span> {
+       jcenter()
+   }
+   <span class="hljs-keyword">dependencies</span> {
+       <span class="hljs-keyword">classpath</span> <span class="hljs-string">"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"</span>
+
+       <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> Do not place your application dependencies here; they belong</span>
+       <span class="hljs-comment">// in the individual module build.gradle files</span>
+   }
+}</code></pre>
+<p>This will cause the extension not to work. To fix that, simply copy that code to each of the project modules in which you wish to use Kotlin.</p>
+<p>If you setup everything correctly, you should be able to run and test your application the same way you would in a standard Android project, but now using Kotlin.</p>
+<h2>Saving Time with Kotlin</h2>
+<p>So, let’s start with describing some key aspects of Kotlin language and by providing tips on how you can save time by using it instead of Java.</p>
+<h2>Feature #1: Static Layout Import</h2>
+<p>One of the most common boilerplate codes in Android is using the <code>findViewById()</code> function to obtain references to your views in Activities or Fragments.</p>
+<p>There are solutions, such as the <a href="http://jakewharton.github.io/butterknife/">Butterknife</a> library, that save some typing, but Kotlin takes this another step by allowing you to import all references to views from the layout with one import.</p>
+<p>For example, consider the following activity XML layout:</p>
+<pre><code class="hljs language-xml"><span class="php"><span class="hljs-meta">&#x3C;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span><span class="hljs-meta">?></span></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:paddingBottom</span>=<span class="hljs-string">"@dimen/activity_vertical_margin"</span>
+    <span class="hljs-attr">android:paddingLeft</span>=<span class="hljs-string">"@dimen/activity_horizontal_margin"</span>
+    <span class="hljs-attr">android:paddingRight</span>=<span class="hljs-string">"@dimen/activity_horizontal_margin"</span>
+    <span class="hljs-attr">android:paddingTop</span>=<span class="hljs-string">"@dimen/activity_vertical_margin"</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">"co.ikust.kotlintest.MainActivity"</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/helloWorldTextView"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>/></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">RelativeLayout</span>></span></code></pre>
+<p>And the accompanying activity code:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">package</span> co.ikust.kotlintest
+
+<span class="hljs-keyword">import</span> android.support.v7.app.AppCompatActivity
+<span class="hljs-keyword">import</span> android.os.Bundle
+
+<span class="hljs-keyword">import</span> kotlinx.android.synthetic.main.activity_main.*
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span></span>() {
+
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        helloWorldTextView.text = <span class="hljs-string">"Hello World!"</span>
+    }
+}</code></pre>
+<p>To get the references for all the views in the layout with a defined ID, use the Android Kotlin extension <a href="https://github.com/Kotlin/anko">Anko</a>. Remember to type in this import statement:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">import</span> kotlinx.android.synthetic.main.activity_main.*</code></pre>
+<p>Note you don’t need to write semicolons at the end of the lines in Kotlin because they are optional.</p>
+<p>The <code>TextView</code> from layout is imported as a <code>TextView</code> instance with the name equal to the ID of the view. Don’t be confused by the syntax, which is used to set the label:</p>
+<pre><code class="hljs language-kotlin">helloWorldTextView.text = <span class="hljs-string">"Hello World!"</span></code></pre>
+<p>We will cover that shortly.</p>
+<p><strong>Caveats</strong>:</p>
+<ul>
+<li>Make sure you import the correct layout, otherwise imported View references will have a <code>null</code> value.</li>
+<li>When using fragments, make sure imported View references are used <strong>after</strong> the <code>onCreateView()</code> function call. Import the layout in <code>onCreateView()</code> function and use the View references to setup the UI in <code>onViewCreated()</code>. The references won’t be assigned before the <code>onCreateView()</code> method has finished.</li>
+</ul>
+<h2>Feature #2: Writing POJO Classes with Kotlin</h2>
+<p>Something that will save the most time with Kotlin is writing the POJO (Plain Old Java Object) classes used to hold data. For example, in the request and response body of a RESTful API. In applications that rely on RESTful API, there will be many classes like that.</p>
+<p>In Kotlin, much is done for you, and the syntax is concise. For example, consider the following class in Java:</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+   <span class="hljs-keyword">private</span> String firstName;
+
+   <span class="hljs-keyword">private</span> String lastName;
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getFirstName</span><span class="hljs-params">()</span> </span>{
+       <span class="hljs-keyword">return</span> firstName;
+   }
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFirstName</span><span class="hljs-params">(String firstName)</span> </span>{
+       <span class="hljs-keyword">this</span>.firstName = firstName;
+   }
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getLastName</span><span class="hljs-params">()</span> </span>{
+       <span class="hljs-keyword">return</span> lastName;
+   }
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLastName</span><span class="hljs-params">(String lastName)</span> </span>{
+       <span class="hljs-keyword">this</span>.lastName = lastName;
+   }
+}</code></pre>
+<p>When working with Kotlin, you don’t have to write public keyword again. By default, everything is of public scope. For example, if you want to declare a class, you simply write:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+}</code></pre>
+<p>The equivalent of the Java code above in Kotlin:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+   <span class="hljs-keyword">var</span> firstName: String? = <span class="hljs-literal">null</span>
+
+   <span class="hljs-keyword">var</span> lastName: String? = <span class="hljs-literal">null</span>
+}</code></pre>
+<p>Well, that saves a lot of typing, doesn’t it? Let’s walk through the Kotlin code.</p>
+<p><img src="https://assets.toptal.io/uploads/blog/image/121112/toptal-blog-image-1472553996024-d91273edb8c1031b8747a2810f25dc7c.jpg" alt="Kotlin saves a lot of typing"></p>
+<p>When defining variables in Kotlin, there are two options:</p>
+<ul>
+<li>Mutable variables, defined by <code>var</code> keyword.</li>
+<li>Immutable variables, defined by <code>val</code> keyword.</li>
+</ul>
+<p>The next thing to note is the syntax differs a bit from Java; first, you declare the variable name and then follow with type. Also, by default, properties are non-null types, meaning that they can’t accept <code>null</code> value. To define a variable to accept a <code>null</code> value, a question mark must be added after the type. We will talk about this and null-safety in Kotlin later.</p>
+<p>Another important thing to note is that Kotlin doesn’t have the ability to declare fields for the class; only properties can be defined. So, in this case, <code>firstName</code> and <code>lastName</code> are properties that have been assigned default getter/setter methods. As mentioned, in Kotlin, they are both public by default.</p>
+<p>Custom accessors can be written, for example:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+   <span class="hljs-keyword">var</span> firstName: String? = <span class="hljs-literal">null</span>
+
+   <span class="hljs-keyword">var</span> lastName: String? = <span class="hljs-literal">null</span>
+
+   <span class="hljs-keyword">val</span> fullName: String?
+        <span class="hljs-keyword">get</span>() firstName + <span class="hljs-string">" "</span> + lastName
+}</code></pre>
+<p>From the outside, when it comes to syntax, properties behave like public fields in Java:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> userName = user.firstName
+user.firstName = <span class="hljs-string">"John"</span></code></pre>
+<p>Note that the new property <code>fullName</code> is read only (defined by <code>val</code> keyword) and has a custom getter; it simply appends first and last name.</p>
+<p>All properties in Kotlin must be assigned when declared or are in a constructor. There are some cases when that isn’t convenient; for example, for properties that will be initialized via dependency injection. In that case, a <code>lateinit</code> modifier can be used. Here is an example:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+    lateinit <span class="hljs-keyword">var</span> firstName : String;
+
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">inject</span><span class="hljs-params">()</span></span> {
+        firstName = <span class="hljs-string">"John"</span>;
+    }
+}</code></pre>
+<p>More details about properties can be found in the <a href="https://kotlinlang.org/docs/reference/properties.html">official documentation</a>.</p>
+<h2>Feature #3: Class Inheritance and Constructors</h2>
+<p>Kotlin has a more concise syntax when it comes to constructors, as well.</p>
+<h3>Constructors</h3>
+<p>Kotlin classes have a primary constructor and one or more secondary constructors. An example of defining a primary constructor:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">constructor</span></span>(firstName: String, lastName: String) {
+}</code></pre>
+<p>The primary constructor goes after the class name in the class definition. If the primary constructor doesn’t have any annotations or visibility modifiers, the constructor keyword can be omitted:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(firstName: String) {
+}</code></pre>
+<p>Note that a primary constructor cannot have any code; any initialization must be done in the <code>init</code> code block:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(firstName: String) {
+    init {
+         <span class="hljs-comment">//perform primary constructor initialization here</span>
+    }
+}</code></pre>
+<p>Furthermore, a primary constructor can be used to define and initialize properties:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>(<span class="hljs-keyword">var</span> firstName: String, <span class="hljs-keyword">var</span> lastName: String) {
+  <span class="hljs-comment">// ...</span>
+}</code></pre>
+<p>Just like regular ones, properties defined from a primary constructor can be immutable (<code>val</code>) or mutable (<code>var</code>).</p>
+<p>Classes may have secondary constructors as well; the syntax for defining one is as follows:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>(<span class="hljs-keyword">var</span> firstName: String, <span class="hljs-keyword">var</span> lastName) {
+    <span class="hljs-keyword">constructor</span>(name: String, parent: Person) : <span class="hljs-keyword">this</span>(name) {
+        parent.children.add(<span class="hljs-keyword">this</span>)
+    }
+}</code></pre>
+<p>Note that every secondary constructor must delegate to a primary constructor. This is similar to Java, which uses <code>this</code> keyword:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>(<span class="hljs-keyword">val</span> firstName: String, <span class="hljs-keyword">val</span> lastName: String) {
+    <span class="hljs-keyword">constructor</span>(firstName: String) : <span class="hljs-keyword">this</span>(firstName, <span class="hljs-string">""</span>) {
+       <span class="hljs-comment">//...</span>
+    }
+}</code></pre>
+<p>When instantiating classes, note that Kotlin doesn’t have <code>new</code> keywords, as does Java. To instantiate the aforementioned <code>User</code> class, use:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> user = User(<span class="hljs-string">"John"</span>, <span class="hljs-string">"Doe)</span></code></pre>
+<h3>Introducing Inheritance</h3>
+<p>In Kotlin, all classes extend from <code>Any</code>, which is similar to <code>Object</code> in Java. By default, classes are closed, like final classes in Java. So, in order to extend a class, it has to be declared as <code>open</code> or <code>abstract</code>:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>(<span class="hljs-keyword">val</span> firstName, <span class="hljs-keyword">val</span> lastName)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Administrator</span></span>(<span class="hljs-keyword">val</span> firstName, <span class="hljs-keyword">val</span> lastName) : User(firstName, lastName)</code></pre>
+<p>Note that you have to delegate to the default constructor of the extended class, which is similar to calling <code>super()</code> method in the constructor of a new class in Java.</p>
+<p>For more details about classes, check <a href="https://kotlinlang.org/docs/reference/classes.html">the official documentation</a>.</p>
+<h2>Feature #4: Lambda Expressions</h2>
+<p>Lambda expressions, introduced with Java 8, are one its favorite features. However, things are not so bright on Android, as it still only supports Java 7, and looks like Java 8 won’t be supported anytime soon. So, workarounds, such as <a href="https://github.com/orfjackal/retrolambda">Retrolambda</a>, bring lambda expressions to Android.</p>
+<p>With Kotlin, no additional libraries or workarounds are required.</p>
+<h3>Functions in Kotlin</h3>
+<p>Let’s start by quickly going over the function syntax in Kotlin:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">add</span><span class="hljs-params">(x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>)</span></span> : <span class="hljs-built_in">Int</span> {
+    <span class="hljs-keyword">return</span> x + y
+}</code></pre>
+<p>The return value of the function can be omitted, and in that case, the function will return <code>Int</code>. It’s worth repeating that everything in Kotlin is an object, extended from <code>Any</code>, and there are no primitive types.</p>
+<p>An argument of the function can have a default value, for example:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">add</span><span class="hljs-params">(x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>  = <span class="hljs-number">1</span>)</span></span> : <span class="hljs-built_in">Int</span> {
+    <span class="hljs-keyword">return</span> x + y;
+}</code></pre>
+<p>In that case, the <code>add()</code> function can be invoked by passing only the <code>x</code> argument. The equivalent Java code would be:</p>
+<pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>{
+   <span class="hljs-keyword">return</span> add(x, <span class="hljs-number">1</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
+    <span class="hljs-keyword">return</span> x + y;
+}</code></pre>
+<p>Another nice thing when calling a function is that named arguments can be used. For example:</p>
+<pre><code class="hljs language-kotlin">add(y = <span class="hljs-number">12</span>, x = <span class="hljs-number">5</span>)</code></pre>
+<p>For more details about functions, check the <a href="https://kotlinlang.org/docs/reference/functions.html">official documentation</a>.</p>
+<h3>Using Lambda Expressions in Kotlin</h3>
+<p>Lambda expressions in Kotlin can be viewed as anonymous functions in Java, but with a more concise syntax. As an example, let’s show how to implement click listener in Java and Kotlin.</p>
+<p>In Java:</p>
+<pre><code class="hljs language-java">view.setOnClickListener(<span class="hljs-keyword">new</span> OnClickListener() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(View v)</span> </span>{
+        Toast.makeText(v.getContext(), <span class="hljs-string">"Clicked on view"</span>, Toast.LENGTH_SHORT).show();
+    }
+};</code></pre>
+<p>In Kotlin:</p>
+<pre><code class="hljs language-kotlin">view.setOnClickListener({ view -> toast(<span class="hljs-string">"Click"</span>) })</code></pre>
+<p>Wow! Just one line of code! We can see that the lambda expression is surrounded by curly braces. Parameters are declared first, and the body goes after the <code>-></code> sign. With click listener, type for the view parameter isn’t specified since it can be inferred. The body is simply a call to <code>toast()</code> function for showing toast, which Kotlin provides.</p>
+<p>Also, if parameters aren’t used, we can leave them out:</p>
+<pre><code class="hljs language-kotlin">view.setOnClickListener({ toast(<span class="hljs-string">"Click"</span>) })</code></pre>
+<p>Kotlin has optimized Java libraries, and any function that receives an interface with one method for an argument can be called with a function argument (instead of Interface).</p>
+<p>Furthermore, if the function is the last parameter, it can be moved out of the parentheses:</p>
+<pre><code class="hljs language-kotlin">view.setOnClickListener() { toast(<span class="hljs-string">"Click"</span>) }</code></pre>
+<p>Finally, if the function has only one parameter that is a function, parentheses can be left out:</p>
+<pre><code class="hljs language-kotlin"></code></pre>
+<p>For more information, check <a href="https://leanpub.com/kotlin-for-android-developers">Kotlin for Android developers book</a> by Antonio Leiva and the <a href="https://kotlinlang.org/docs/reference/lambdas.html">official documentation</a>.</p>
+<h3>Extension Functions</h3>
+<p>Kotlin, similar to C#, provides the ability to extend existing classes with new functionality by using extension functions. For example, an extension method that would calculate the MD5 hash of a <code>String</code>:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> String.<span class="hljs-title">md5</span><span class="hljs-params">()</span></span>: ByteArray {
+    <span class="hljs-keyword">val</span> digester = MessageDigest.getInstance(<span class="hljs-string">"MD5"</span>)
+    digester.update(<span class="hljs-keyword">this</span>.toByteArray(Charset.defaultCharset()))
+    <span class="hljs-keyword">return</span> digester.digest()
+}</code></pre>
+<p>Note that the function name is preceded by the name of the extended class (in this case, <code>String</code>), and that the instance of the extended class is available via <code>this</code> keyword.</p>
+<p>Extension functions are the equivalent of Java utility functions. The example function in Java would look like:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">public</span> static int toNumber(String instance) {
+    <span class="hljs-keyword">return</span> Integer.valueOf(instance);
+}</code></pre>
+<p>The example function must be placed in a Utility class. What that means is that extension functions don’t modify the original extended class, but are a convenient way of writing utility methods.</p>
+<h2>Feature #5: Null-Safety</h2>
+<p>One of the things you hustle the most in Java is probably <code>NullPointerException</code>. Null-safety is a feature that has been integrated into the Kotlin language and is so implicit you usually won’t have to worry about. The <a href="https://kotlinlang.org/docs/reference/null-safety.html">official documentation</a> states that the only possible causes of <code>NullPointerExceptions</code> are:</p>
+<ul>
+<li>An explicit call to throw <code>NullPointerException</code>.</li>
+<li>Using the <code>!!</code> operator (which I will explain later).</li>
+<li>External Java code.</li>
+<li>If the <code>lateinit</code> property is accessed in the constructor before it is initialized, an<code>UninitializedPropertyAccessException</code> will be thrown.</li>
+</ul>
+<p>By default, all variables and properties in Kotlin are considered <code>non-null</code> (unable to hold a <code>null</code> value) if they are not explicitly declared as nullable. As already mentioned, to define a variable to accept a <code>null</code> value, a question mark must be added after the type. For example:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> number: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span></code></pre>
+<p>However, note that the following code won’t compile:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> number: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>
+number.toString()</code></pre>
+<p>This is because the compiler performs <code>null</code> checks. To compile, a <code>null</code> check must be added:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> number: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>
+
+<span class="hljs-keyword">if</span>(number != <span class="hljs-literal">null</span>) {
+    number.toString();
+}</code></pre>
+<p>This code will compile successfully. What Kotlin does in the background, in this case, is that <code>number</code> becomes <code>nun-null</code> (<code>Int</code> instead of <code>Int?</code>) inside the if block.</p>
+<p>The <code>null</code> check can be simplified using <strong>safe call operator</strong> (<code>?.</code>):</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> number: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>
+number?.toString()</code></pre>
+<p>The second line will be executed only if the number is not <code>null</code>. You can even use the famous <strong>Elvis operator</strong> (<code>?:</code>):</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> number <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>
+<span class="hljs-keyword">val</span> stringNumber = number?.toString() ?: <span class="hljs-string">"Number is null"</span></code></pre>
+<p>If the expression on the left of <code>?:</code> is not <code>null</code>, it is evaluated and returned. Otherwise, the result of the expression on the right is returned. Another neat thing is that you can use <code>throw</code> or <code>return</code> on the right-hand side of the Elvis operator since they are expressions in Kotlin. For example:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">sendMailToUser</span><span class="hljs-params">(user: <span class="hljs-type">User</span>)</span></span> {
+    <span class="hljs-keyword">val</span> email = user?.email ?: <span class="hljs-keyword">throw</span> new IllegalArgumentException(<span class="hljs-string">"User email is null"</span>)
+    <span class="hljs-comment">//...</span>
+}</code></pre>
+<h3>The !! Operator</h3>
+<p>If you want a <code>NullPointerException</code> thrown the same way as in Java, you can do that with the <code>!!</code> operator. The following code will throw a <code>NullPointerException</code>:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> number: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>
+number!!.toString()</code></pre>
+<h3>Casting</h3>
+<p>Casting in done by using an <code>as</code> keyword:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> x: String = y <span class="hljs-keyword">as</span> String</code></pre>
+<p>This is considered “Unsafe” casting, as it will throw <code>ClassCastException</code> if the cast is not possible, as Java does. There is a “Safe” cast operator that returns the <code>null</code> value instead of throwing an exception:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> x: String = y <span class="hljs-keyword">as</span>? String</code></pre>
+<p>For more details on casting, check the <a href="https://kotlinlang.org/docs/reference/typecasts.html">Type Casts and Casts</a> section of the official documentation, and for more details on <code>null</code> safety check the <a href="https://kotlinlang.org/docs/reference/null-safety.html">Null-Safety</a> section.</p>
+<h3><code>lateinit</code> properties</h3>
+<p>There is a case in which using <code>lateinit</code> properties can cause an exception similar to <code>NullPointerException</code>. Consider the following class:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InitTest</span> </span>{
+    lateinit <span class="hljs-keyword">var</span> s: String;
+
+    init {
+        <span class="hljs-keyword">val</span> len = <span class="hljs-keyword">this</span>.s.length
+    }
+
+}</code></pre>
+<p>This code will compile without warning. However, as soon as an instance of <code>TestClass</code> is created, an <code>UninitializedPropertyAccessException</code> will be thrown because property <code>s</code> is accessed before it is initialized.</p>
+<h2>Feature #6: Function <code>with()</code></h2>
+<p>Function <code>with()</code> is useful and comes with the Kotlin standard library. It can be used to save some typing if you need to access many properties of an object. For example:</p>
+<pre><code class="hljs language-kotlin">with(helloWorldTextView) {
+    text = <span class="hljs-string">"Hello World!"</span>
+    visibility = View.VISIBLE
+}</code></pre>
+<p>It receives an object and an extension function as parameters. The code block (in the curly braces) is a lambda expression for the extension function of the object specified as the first parameter.</p>
+<h2>Feature #7: Operator Overloading</h2>
+<p>With Kotlin, custom implementations can be provided for a predefined set of operators. To implement an operator, a member function or an extension function with the given name must be provided.</p>
+<p>For example, to implement the multiplication operator, a member function or extension function, with the name <code>times(argument)</code>, must be provided:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> String.<span class="hljs-title">times</span><span class="hljs-params">(b: <span class="hljs-type">Int</span>)</span></span>: String {
+    <span class="hljs-keyword">val</span> buffer = StringBuffer()
+
+    <span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> <span class="hljs-number">1.</span>.b) {
+        buffer.append(<span class="hljs-keyword">this</span>)
+    }
+
+    <span class="hljs-keyword">return</span> buffer.toString()
+}</code></pre>
+<p>The example above shows an implementation of binary <code>*</code> operator on the <code>String</code>. For example, the following expression will assign value “TestTestTestTest” to a <code>newString</code> variable:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> newString = <span class="hljs-string">"Test"</span> * <span class="hljs-number">4</span></code></pre>
+<p>Since extension functions can be used, it means the default behavior of the operators for all the objects can be changed. This is a double-edged sword and should be used with caution. For a list of function names for all operators that can be overloaded, check the <a href="https://kotlinlang.org/docs/reference/operator-overloading.html">official documentation</a>.</p>
+<p>Another big difference compared to Java are <code>==</code> and <code>!=</code> operators. Operator <code>==</code> translates to:</p>
+<pre><code class="hljs language-kotlin">a?.equals(b) ?: b === <span class="hljs-literal">null</span> </code></pre>
+<p>While operator <code>!=</code> translates to:</p>
+<pre><code class="hljs language-kotlin">!(a?.equals(b) ?:</code></pre>
+<p>What that means, is that using <code>==</code> doesn’t make an identity check as in Java (compare if instances of an object are the same), but behaves the same way as <code>equals()</code> method along with <code>null</code> checks.</p>
+<p>To perform identity check, operators <code>===</code> and <code>!==</code> must be used in Kotlin.</p>
+<h2>Feature #8: Delegated Properties</h2>
+<p>Certain properties share some common behaviors. For instance:</p>
+<ul>
+<li>Lazy-initialized properties that are initialized upon first access.</li>
+<li>Properties that implement Observable in Observer pattern.</li>
+<li>Properties that are stored in a map instead as separate fields.</li>
+</ul>
+<p>To make cases like this easier to implement, Kotlin supports <strong>Delegated Properties</strong>:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span> </span>{
+    <span class="hljs-keyword">var</span> p: String <span class="hljs-keyword">by</span> Delegate()
+}</code></pre>
+<p>This means that getter and setter functions for the property <code>p</code> are handled by an instance of another class, <code>Delegate</code>.</p>
+<p>An example of a delegate for the <code>String</code> property:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Delegate</span> </span>{
+  <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getValue</span><span class="hljs-params">(thisRef: <span class="hljs-type">Any</span>?, property: <span class="hljs-type">KProperty</span>&#x3C;*>)</span></span>: String {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"<span class="hljs-subst">$thisRef</span>, thank you for delegating '<span class="hljs-subst">${property.name}</span>' to me!"</span>
+  }
+
+  <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">setValue</span><span class="hljs-params">(thisRef: <span class="hljs-type">Any</span>?, property: <span class="hljs-type">KProperty</span>&#x3C;*>, value: <span class="hljs-type">String</span>)</span></span> {
+    println(<span class="hljs-string">"<span class="hljs-subst">$value</span> has been assigned to '<span class="hljs-subst">${property.name}</span> in <span class="hljs-subst">$thisRef</span>.'"</span>)
+  }
+}</code></pre>
+<p>The example above prints a message when a property is assigned or read.</p>
+<p>Delegates can be created for both mutable (<code>var</code>) and read-only (<code>val</code>) properties.</p>
+<p>For a read-only property, <code>getValue</code> method must be implemented. It takes two parameters (taken from the <a href="https://kotlinlang.org/docs/reference/delegated-properties.html">offical documentation</a>):</p>
+<ul>
+<li>receiver - must be the same or a supertype of the property owner (for extension properties, it is the type being extended).</li>
+<li>metadata - must be of type <code>KProperty&#x3C;*></code> or its supertype.</li>
+</ul>
+<p>This function must return the same type as property, or its subtype.</p>
+<p>For a mutable property, a delegate has to provide additionally a function named <code>setValue</code> that takes the following parameters:</p>
+<ul>
+<li>receiver - same as for <code>getValue()</code>.</li>
+<li>metadata - same as for <code>getValue()</code>.</li>
+<li>new value - must be of the same type as a property or its supertype.</li>
+</ul>
+<p>There are a few standard delegates that come with Kotlin that cover the most common situations:</p>
+<ul>
+<li>Lazy</li>
+<li>Observable</li>
+<li>Vetoable</li>
+</ul>
+<h3>Lazy</h3>
+<p>Lazy is a standard delegate that takes a lambda expression as a parameter. The lambda expression passed is executed the first time <code>getValue()</code> method is called.</p>
+<p>By default, the evaluation of lazy properties is synchronized. If you are not concerned with multi-threading, you can use <code>lazy(LazyThreadSafetyMode.NONE) { ... }</code> to get extra performance.</p>
+<h3>Observable</h3>
+<p>The <code>Delegates.observable()</code> is for properties that should behave as Observables in Observer pattern. It accepts two parameters, the initial value and a function that has three arguments (property, old value, and new value).</p>
+<p>The given lambda expression will be executed every time <code>setValue()</code> method is called:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+    <span class="hljs-keyword">var</span> email: String <span class="hljs-keyword">by</span> Delegates.observable(<span class="hljs-string">""</span>) {
+        prop, old, new ->
+        <span class="hljs-comment">//handle the change from old to new value</span>
+    }
+}</code></pre>
+<h3>Vetoable</h3>
+<p>This standard delegate is a special kind of Observable that lets you decide whether a new value assigned to a property will be stored or not. It can be used to check some conditions before assigning a value. As with <code>Delegates.observable()</code>, it accepts two parameters: the initial value, and a function.</p>
+<p>The difference is that the function returns a Boolean value. If it returns <code>true</code>, the new value assigned to the property will be stored, or otherwise discarded.</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">var</span> positiveNumber = Delegates.vetoable(<span class="hljs-number">0</span>) {
+    d, old, new ->
+    new >= <span class="hljs-number">0</span>
+}</code></pre>
+<p>The given example will store only positive numbers that are assigned to the property.</p>
+<p>For more details, check the <a href="https://kotlinlang.org/docs/reference/delegated-properties.html">official documentation</a>.</p>
+<h2>Feature #9: Mapping an Object to a Map</h2>
+<p>A common use case is to store values of the properties inside a map. This often happens in applications that work with RESTful APIs and parses JSON objects. In this case, a map instance can be used as a delegate for a delegated property. An example from the <a href="https://kotlinlang.org/docs/reference/delegated-properties.html">official documentation</a>:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>(<span class="hljs-keyword">val</span> map: Map&#x3C;String, Any?>) {
+    <span class="hljs-keyword">val</span> name: String <span class="hljs-keyword">by</span> map
+    <span class="hljs-keyword">val</span> age: <span class="hljs-built_in">Int</span>     <span class="hljs-keyword">by</span> map
+}</code></pre>
+<p>In this example, <code>User</code> has a primary constructor that takes a map. The two properties will take the values from the map that are mapped under keys that are equal to property names:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> user = User(mapOf(
+    <span class="hljs-string">"name"</span> to <span class="hljs-string">"John Doe"</span>,
+    <span class="hljs-string">"age"</span>  to <span class="hljs-number">25</span>
+))</code></pre>
+<p>The name property of the new user instance will be assigned the value of “John Doe” and age property the value 25.</p>
+<p>This works for var properties in combination with <code>MutableMap</code> as well:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MutableUser</span></span>(<span class="hljs-keyword">val</span> map: MutableMap&#x3C;String, Any?>) {
+    <span class="hljs-keyword">var</span> name: String <span class="hljs-keyword">by</span> map
+    <span class="hljs-keyword">var</span> age: <span class="hljs-built_in">Int</span>     <span class="hljs-keyword">by</span> map
+}</code></pre>
+<h2>Feature #10: Collections and Functional Operations</h2>
+<p>With the support for lambdas in Kotlin, collections can be leveraged to a new level.</p>
+<p>First of all, Kotlin distinguishes between mutable and immutable collections. For example, there are two versions of <strong>Iterable</strong> interface:</p>
+<ul>
+<li>Iterable</li>
+<li>MutableIterable</li>
+</ul>
+<p>The same goes for <strong>Collection</strong>, <strong>List</strong>, <strong>Set</strong> and <strong>Map</strong> interfaces.</p>
+<p>For example, this <code>any</code> operation returns <code>true</code> if at least one element matches the given predicate:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-keyword">val</span> list = listOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>)
+assertTrue(list.any { it % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> })</code></pre>
+<p>For an extensive list of functional operations that can be done on collections, check this <a href="http://antonioleiva.com/collection-operations-kotlin/">blog post</a>.</p>
+<h2>Conclusion</h2>
+<p>We have just scratched the surface of what Kotlin offers. For those interested in further reading and learning more, check:</p>
+<ul>
+<li><a href="http://antonioleiva.com/kotlin/">Antonio Leiva’s Kotlin blog posts and book</a>.</li>
+<li><a href="https://kotlinlang.org/docs/reference/">Official documentation</a> and <a href="https://kotlinlang.org/docs/tutorials/">tutorials</a> from JetBrains.</li>
+</ul>
+<p>To sum up, Kotlin offers you the ability to save time when writing native <a href="https://www.toptal.com/android">Android</a> applications by using an intuitive and concise syntax. It is still a young programming language, but in my opinion, it is now stable enough to be used for building production apps.</p>
+<p>The benefits of using Kotlin:</p>
+<ul>
+<li>Support by Android Studio is seamless and excellent.</li>
+<li>It is easy to convert an existing Java project to Kotlin.</li>
+<li>Java and Kotlin code may coexist in the same project.</li>
+<li>There is no speed overhead in the application.</li>
+</ul>
+<p>The downsides:</p>
+<ul>
+<li>Kotlin will add its libraries to the generated <code>.apk</code>, so the final <code>.apk</code> size will be about 300KB larger.</li>
+<li>If abused, operator overloading can lead to unreadable code.</li>
+<li>IDE and Autocomplete behaves a little slower when working with Kotlin than it does with pure Java Android projects.</li>
+<li>Compilation times can be a bit longer.</li>
+</ul>
+
+      
+      <div class="main-content-backlink">
+        <hr/>
+        <a href='http://kotlin.link/'>&larr; Back to kotlin.link</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var menuLink = document.querySelector('.menu-link');
+
+    var listener = function() {
+      this.class = 'active';
+      this.layout = document.getElementById('layout');
+      this.handleEvent = function() {
+        this.layout.classList.toggle(this.class);
+      };
+      this.handleEvent();
+    };
+
+    menuLink.addEventListener("click", function(){listener();}, false);
+  </script>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/github.min.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter35722810 = new Ya.Metrika({id:35722810,
+            webvisor:true,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true});
+        } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="//mc.yandex.ru/watch/35722810" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+</html>

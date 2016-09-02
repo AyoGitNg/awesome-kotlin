@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://kotlin.link/sitemap.xml
